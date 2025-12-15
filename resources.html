@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="UN resources and SDG links" />
+  <title>Resources • UNSA Sheridan</title>
+  <link rel="icon" type="image/png" href="assets/favicon.png" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="topbar">
+    <div class="container">
+      <nav class="nav" aria-label="Primary">
+        <a class="brand" href="index.html">
+          <img src="assets/logo.png" alt="UNSA Sheridan logo" />
+          <div class="title">
+            <strong>UNSA SHERIDAN</strong>
+            <span>Sheridan College Club</span>
+          </div>
+        </a>
+
+        <div class="links" role="navigation">
+          <a href="about.html">About</a>
+          <a href="events.html">Events</a>
+          <a href="team.html">Our Team</a>
+          <a href="goals.html">Goals</a>
+          <a href="join.html">Join</a>
+          <a href="resources.html">Resources</a>
+          <a href="contact.html">Contact</a>
+        </div>
+
+        <div class="actions">
+          <a class="btn secondary" href="events.html" title="See what's coming up">Upcoming</a>
+          <a class="btn" href="join.html" title="Become a member">Join UNSA</a>
+          <button class="hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false">☰</button>
+        </div>
+      </nav>
+
+      <div class="mobileMenu" id="mobileMenu" aria-label="Mobile menu">
+        <a href="about.html">About</a>
+        <a href="events.html">Events</a>
+        <a href="team.html">Our Team</a>
+        <a href="goals.html">Goals</a>
+        <a href="join.html">Join</a>
+        <a href="resources.html">Resources</a>
+        <a href="contact.html">Contact</a>
+      </div>
+    </div>
+  </header>
+
+  
+<main class="container">
+  <section class="pageHeader">
+    <h1 class="reveal">Resources</h1>
+    <p class="reveal">Helpful links for learning, project ideas, and SDG research.</p>
+  </section>
+
+  <section class="section" style="padding-top:10px;">
+    <div class="grid3">
+      <a class="feature reveal" href="https://sdgs.un.org/goals" target="_blank" rel="noreferrer">
+        <div class="icon">🎯</div>
+        <h3>UN SDGs</h3>
+        <p>Explore the 17 Sustainable Development Goals.</p>
+      </a>
+      <a class="feature reveal" href="https://www.un.org/en/" target="_blank" rel="noreferrer">
+        <div class="icon">🏛️</div>
+        <h3>United Nations</h3>
+        <p>UN overview, agencies, and initiatives.</p>
+      </a>
+      <a class="feature reveal" href="https://www.unhcr.org/" target="_blank" rel="noreferrer">
+        <div class="icon">🕊️</div>
+        <h3>UNHCR</h3>
+        <p>Refugees and humanitarian response.</p>
+      </a>
+    </div>
+
+    <div class="split">
+      <div class="card pad reveal">
+        <h2 style="margin:0 0 8px;">Project ideas</h2>
+        <div class="list">
+          <div class="li"><div class="dot"></div><div><strong>Campus SDG audit</strong><span>Identify one SDG improvement Sheridan could make.</span></div></div>
+          <div class="li"><div class="dot"></div><div><strong>Mini policy brief</strong><span>Write a 1–2 page brief and present it at a meeting.</span></div></div>
+          <div class="li"><div class="dot"></div><div><strong>Awareness campaign</strong><span>Social posts + event + volunteer partner.</span></div></div>
+        </div>
+      </div>
+
+      <div class="card pad reveal">
+        <h2 style="margin:0 0 8px;">Toolbox</h2>
+        <div class="list">
+          <div class="li"><div class="dot"></div><div><strong>Slide template</strong><span>Create a clean deck for events and speakers.</span></div></div>
+          <div class="li"><div class="dot"></div><div><strong>Event checklist</strong><span>Venue, promo, registration, volunteers, feedback.</span></div></div>
+          <div class="li"><div class="dot"></div><div><strong>Partnership tracker</strong><span>Keep a list of student orgs + contacts.</span></div></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="card pad reveal" style="margin-top:14px;">
+      <h2 style="margin:0 0 8px;">Want a page for sponsors?</h2>
+      <p class="small">Easy add: create <b>sponsors.html</b> and link it in the navbar. Use the same layout as other pages.</p>
+    </div>
+  </section>
+</main>
+
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footerGrid">
+        <div class="card pad">
+          <div style="display:flex; align-items:center; gap:12px;">
+            <img src="assets/logo.png" alt="UNSA Sheridan" style="width:44px;height:44px;border-radius:14px;box-shadow:var(--glow);background:rgba(255,255,255,.06);object-fit:cover;" />
+            <div>
+              <strong style="letter-spacing:.4px;">UNSA Sheridan</strong><br/>
+              <span class="muted">A student community focused on global awareness, diplomacy, and impact.</span>
+            </div>
+          </div>
+          <p class="muted" style="margin-top:12px;">
+            Want to collaborate or sponsor an event? Reach out via the contact page.
+          </p>
+          <div class="copy">© <span id="year"></span> UNSA Sheridan • Built with ♥</div>
+        </div>
+
+        <div class="cols">
+          <a href="about.html">Learn about UNSA</a>
+          <a href="events.html">See upcoming events</a>
+          <a href="join.html">Become a member</a>
+          <a href="resources.html">UN + SDG resources</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>

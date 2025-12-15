@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="UNSA Sheridan mission and goals" />
+  <title>Goals • UNSA Sheridan</title>
+  <link rel="icon" type="image/png" href="assets/favicon.png" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="topbar">
+    <div class="container">
+      <nav class="nav" aria-label="Primary">
+        <a class="brand" href="index.html">
+          <img src="assets/logo.png" alt="UNSA Sheridan logo" />
+          <div class="title">
+            <strong>UNSA SHERIDAN</strong>
+            <span>Sheridan College Club</span>
+          </div>
+        </a>
+
+        <div class="links" role="navigation">
+          <a href="about.html">About</a>
+          <a href="events.html">Events</a>
+          <a href="team.html">Our Team</a>
+          <a href="goals.html">Goals</a>
+          <a href="join.html">Join</a>
+          <a href="resources.html">Resources</a>
+          <a href="contact.html">Contact</a>
+        </div>
+
+        <div class="actions">
+          <a class="btn secondary" href="events.html" title="See what's coming up">Upcoming</a>
+          <a class="btn" href="join.html" title="Become a member">Join UNSA</a>
+          <button class="hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false">☰</button>
+        </div>
+      </nav>
+
+      <div class="mobileMenu" id="mobileMenu" aria-label="Mobile menu">
+        <a href="about.html">About</a>
+        <a href="events.html">Events</a>
+        <a href="team.html">Our Team</a>
+        <a href="goals.html">Goals</a>
+        <a href="join.html">Join</a>
+        <a href="resources.html">Resources</a>
+        <a href="contact.html">Contact</a>
+      </div>
+    </div>
+  </header>
+
+  
+<main class="container">
+  <section class="pageHeader">
+    <h1 class="reveal">Our Goals</h1>
+    <p class="reveal">A clear mission + measurable goals to guide what we build this year.</p>
+  </section>
+
+  <section class="section" style="padding-top:10px;">
+    <div class="split">
+      <div class="card pad reveal">
+        <h2 style="margin:0 0 8px;">Mission</h2>
+        <p>
+          Build a welcoming student community that promotes global awareness, leadership development,
+          and meaningful action aligned with the UN Sustainable Development Goals.
+        </p>
+      </div>
+
+      <div class="card pad reveal">
+        <h2 style="margin:0 0 8px;">This year, we will…</h2>
+        <div class="list">
+          <div class="li"><div class="dot"></div><div><strong>Host monthly events</strong><span>Workshops, speakers, and SDG-themed initiatives.</span></div></div>
+          <div class="li"><div class="dot"></div><div><strong>Launch one flagship project</strong><span>Example: SDG Innovation Challenge or Model UN prep series.</span></div></div>
+          <div class="li"><div class="dot"></div><div><strong>Grow membership</strong><span>Simple onboarding + strong community culture.</span></div></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="card pad reveal" style="margin-top:14px;">
+      <h2 style="margin:0 0 8px;">How we measure progress</h2>
+      <table class="table" aria-label="Goals table">
+        <thead>
+          <tr>
+            <th>Goal</th>
+            <th>Metric</th>
+            <th>Target</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>Engagement</strong><div class="small">Build an active community</div></td>
+            <td class="small">Avg. event attendance</td>
+            <td><span class="pill">25+</span></td>
+          </tr>
+          <tr>
+            <td><strong>Learning</strong><div class="small">Skill-building workshops</div></td>
+            <td class="small">Workshops per term</td>
+            <td><span class="pill">3+</span></td>
+          </tr>
+          <tr>
+            <td><strong>Impact</strong><div class="small">SDG project</div></td>
+            <td class="small">One flagship initiative</td>
+            <td><span class="pill">1 launched</span></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+</main>
+
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footerGrid">
+        <div class="card pad">
+          <div style="display:flex; align-items:center; gap:12px;">
+            <img src="assets/logo.png" alt="UNSA Sheridan" style="width:44px;height:44px;border-radius:14px;box-shadow:var(--glow);background:rgba(255,255,255,.06);object-fit:cover;" />
+            <div>
+              <strong style="letter-spacing:.4px;">UNSA Sheridan</strong><br/>
+              <span class="muted">A student community focused on global awareness, diplomacy, and impact.</span>
+            </div>
+          </div>
+          <p class="muted" style="margin-top:12px;">
+            Want to collaborate or sponsor an event? Reach out via the contact page.
+          </p>
+          <div class="copy">© <span id="year"></span> UNSA Sheridan • Built with ♥</div>
+        </div>
+
+        <div class="cols">
+          <a href="about.html">Learn about UNSA</a>
+          <a href="events.html">See upcoming events</a>
+          <a href="join.html">Become a member</a>
+          <a href="resources.html">UN + SDG resources</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>

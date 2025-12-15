@@ -1,0 +1,152 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Join UNSA Sheridan" />
+  <title>Join • UNSA Sheridan</title>
+  <link rel="icon" type="image/png" href="assets/favicon.png" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="topbar">
+    <div class="container">
+      <nav class="nav" aria-label="Primary">
+        <a class="brand" href="index.html">
+          <img src="assets/logo.png" alt="UNSA Sheridan logo" />
+          <div class="title">
+            <strong>UNSA SHERIDAN</strong>
+            <span>Sheridan College Club</span>
+          </div>
+        </a>
+
+        <div class="links" role="navigation">
+          <a href="about.html">About</a>
+          <a href="events.html">Events</a>
+          <a href="team.html">Our Team</a>
+          <a href="goals.html">Goals</a>
+          <a href="join.html">Join</a>
+          <a href="resources.html">Resources</a>
+          <a href="contact.html">Contact</a>
+        </div>
+
+        <div class="actions">
+          <a class="btn secondary" href="events.html" title="See what's coming up">Upcoming</a>
+          <a class="btn" href="join.html" title="Become a member">Join UNSA</a>
+          <button class="hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false">☰</button>
+        </div>
+      </nav>
+
+      <div class="mobileMenu" id="mobileMenu" aria-label="Mobile menu">
+        <a href="about.html">About</a>
+        <a href="events.html">Events</a>
+        <a href="team.html">Our Team</a>
+        <a href="goals.html">Goals</a>
+        <a href="join.html">Join</a>
+        <a href="resources.html">Resources</a>
+        <a href="contact.html">Contact</a>
+      </div>
+    </div>
+  </header>
+
+  
+<main class="container">
+  <section class="pageHeader">
+    <h1 class="reveal">Join UNSA Sheridan</h1>
+    <p class="reveal">Become a member, volunteer for events, or join the leadership team.</p>
+  </section>
+
+  <section class="section" style="padding-top:10px;">
+    <div class="split">
+      <div class="card pad reveal">
+        <h2 style="margin:0 0 8px;">Quick join form</h2>
+        <p class="small">No backend needed. This opens your email app with a pre-filled message.</p>
+
+        <!-- Replace data-club-email with your official club email when you have it -->
+        <form class="form" id="joinForm" data-club-email="unsa.sheridan@example.com">
+          <input class="input" id="name" name="name" placeholder="Your name" autocomplete="name" />
+          <input class="input" id="email" name="email" placeholder="Your Sheridan / personal email" autocomplete="email" />
+          <select class="select" id="interest" name="interest">
+            <option value="">Select an interest area…</option>
+            <option value="events">Events & logistics</option>
+            <option value="communications">Social media & design</option>
+            <option value="model-un">Model UN & diplomacy</option>
+            <option value="sdg-projects">SDG projects & volunteering</option>
+            <option value="partnerships">Partnerships & outreach</option>
+            <option value="other">Other</option>
+          </select>
+          <textarea class="textarea" id="message" name="message" placeholder="Optional: tell us what you want to learn or build."></textarea>
+          <button class="btn" type="submit">Send join request</button>
+          <div id="formStatus" class="help"></div>
+        </form>
+      </div>
+
+      <div class="card pad reveal">
+        <h2 style="margin:0 0 8px;">Or join via links</h2>
+        <p class="small">Update these with your real links.</p>
+
+        <div class="list">
+          <div class="li">
+            <div class="dot"></div>
+            <div>
+              <strong>WhatsApp Group Chat</strong>
+              <span>Paste your invite link here.</span>
+            </div>
+          </div>
+          <div class="li">
+            <div class="dot"></div>
+            <div>
+              <strong>Instagram</strong>
+              <span>@unsa_sheridan</span>
+            </div>
+          </div>
+          <div class="li">
+            <div class="dot"></div>
+            <div>
+              <strong>Volunteer sign-up (optional)</strong>
+              <span>Google Form / Microsoft Form link.</span>
+            </div>
+          </div>
+        </div>
+
+        <div style="margin-top:12px;">
+          <a class="btn secondary" href="events.html">See events</a>
+          <a class="btn secondary" href="team.html" style="margin-left:10px;">Meet the team</a>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footerGrid">
+        <div class="card pad">
+          <div style="display:flex; align-items:center; gap:12px;">
+            <img src="assets/logo.png" alt="UNSA Sheridan" style="width:44px;height:44px;border-radius:14px;box-shadow:var(--glow);background:rgba(255,255,255,.06);object-fit:cover;" />
+            <div>
+              <strong style="letter-spacing:.4px;">UNSA Sheridan</strong><br/>
+              <span class="muted">A student community focused on global awareness, diplomacy, and impact.</span>
+            </div>
+          </div>
+          <p class="muted" style="margin-top:12px;">
+            Want to collaborate or sponsor an event? Reach out via the contact page.
+          </p>
+          <div class="copy">© <span id="year"></span> UNSA Sheridan • Built with ♥</div>
+        </div>
+
+        <div class="cols">
+          <a href="about.html">Learn about UNSA</a>
+          <a href="events.html">See upcoming events</a>
+          <a href="join.html">Become a member</a>
+          <a href="resources.html">UN + SDG resources</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>

@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Contact UNSA Sheridan" />
+  <title>Contact • UNSA Sheridan</title>
+  <link rel="icon" type="image/png" href="assets/favicon.png" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="topbar">
+    <div class="container">
+      <nav class="nav" aria-label="Primary">
+        <a class="brand" href="index.html">
+          <img src="assets/logo.png" alt="UNSA Sheridan logo" />
+          <div class="title">
+            <strong>UNSA SHERIDAN</strong>
+            <span>Sheridan College Club</span>
+          </div>
+        </a>
+
+        <div class="links" role="navigation">
+          <a href="about.html">About</a>
+          <a href="events.html">Events</a>
+          <a href="team.html">Our Team</a>
+          <a href="goals.html">Goals</a>
+          <a href="join.html">Join</a>
+          <a href="resources.html">Resources</a>
+          <a href="contact.html">Contact</a>
+        </div>
+
+        <div class="actions">
+          <a class="btn secondary" href="events.html" title="See what's coming up">Upcoming</a>
+          <a class="btn" href="join.html" title="Become a member">Join UNSA</a>
+          <button class="hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false">☰</button>
+        </div>
+      </nav>
+
+      <div class="mobileMenu" id="mobileMenu" aria-label="Mobile menu">
+        <a href="about.html">About</a>
+        <a href="events.html">Events</a>
+        <a href="team.html">Our Team</a>
+        <a href="goals.html">Goals</a>
+        <a href="join.html">Join</a>
+        <a href="resources.html">Resources</a>
+        <a href="contact.html">Contact</a>
+      </div>
+    </div>
+  </header>
+
+  
+<main class="container">
+  <section class="pageHeader">
+    <h1 class="reveal">Contact</h1>
+    <p class="reveal">Questions, partnerships, or speaker suggestions? Reach out.</p>
+  </section>
+
+  <section class="section" style="padding-top:10px;">
+    <div class="split">
+      <div class="card pad reveal">
+        <h2 style="margin:0 0 8px;">Contact options</h2>
+        <div class="list">
+          <div class="li"><div class="dot"></div><div><strong>Email</strong><span>unsa.sheridan@example.com (replace this)</span></div></div>
+          <div class="li"><div class="dot"></div><div><strong>Instagram</strong><span>@unsa_sheridan</span></div></div>
+          <div class="li"><div class="dot"></div><div><strong>WhatsApp</strong><span>Invite link on Join page</span></div></div>
+        </div>
+        <div style="margin-top:12px;">
+          <a class="btn" href="join.html">Join the club</a>
+        </div>
+      </div>
+
+      <div class="card pad reveal">
+        <h2 style="margin:0 0 8px;">Speaker / partnership pitch</h2>
+        <p class="small">Fast way: copy and email this template.</p>
+        <div class="card pad" style="background: rgba(0,0,0,.12); border-color: rgba(255,255,255,.10);">
+          <div class="small" style="white-space:pre-wrap;">Subject: UNSA Sheridan — Collaboration
+
+Hi [Name],
+
+I’m reaching out from UNSA Sheridan (Sheridan College). We’re hosting events around global issues, the UN SDGs, and student leadership.
+We’d love to explore a collaboration or invite you to speak at an upcoming session.
+
+Ideal topic(s): [topic]
+Possible dates: [dates]
+Format: [virtual / on-campus / hybrid]
+
+Thanks,
+[Your name]
+UNSA Sheridan</div>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footerGrid">
+        <div class="card pad">
+          <div style="display:flex; align-items:center; gap:12px;">
+            <img src="assets/logo.png" alt="UNSA Sheridan" style="width:44px;height:44px;border-radius:14px;box-shadow:var(--glow);background:rgba(255,255,255,.06);object-fit:cover;" />
+            <div>
+              <strong style="letter-spacing:.4px;">UNSA Sheridan</strong><br/>
+              <span class="muted">A student community focused on global awareness, diplomacy, and impact.</span>
+            </div>
+          </div>
+          <p class="muted" style="margin-top:12px;">
+            Want to collaborate or sponsor an event? Reach out via the contact page.
+          </p>
+          <div class="copy">© <span id="year"></span> UNSA Sheridan • Built with ♥</div>
+        </div>
+
+        <div class="cols">
+          <a href="about.html">Learn about UNSA</a>
+          <a href="events.html">See upcoming events</a>
+          <a href="join.html">Become a member</a>
+          <a href="resources.html">UN + SDG resources</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>

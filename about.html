@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="About UNSA Sheridan" />
+  <title>About • UNSA Sheridan</title>
+  <link rel="icon" type="image/png" href="assets/favicon.png" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="topbar">
+    <div class="container">
+      <nav class="nav" aria-label="Primary">
+        <a class="brand" href="index.html">
+          <img src="assets/logo.png" alt="UNSA Sheridan logo" />
+          <div class="title">
+            <strong>UNSA SHERIDAN</strong>
+            <span>Sheridan College Club</span>
+          </div>
+        </a>
+
+        <div class="links" role="navigation">
+          <a href="about.html">About</a>
+          <a href="events.html">Events</a>
+          <a href="team.html">Our Team</a>
+          <a href="goals.html">Goals</a>
+          <a href="join.html">Join</a>
+          <a href="resources.html">Resources</a>
+          <a href="contact.html">Contact</a>
+        </div>
+
+        <div class="actions">
+          <a class="btn secondary" href="events.html" title="See what's coming up">Upcoming</a>
+          <a class="btn" href="join.html" title="Become a member">Join UNSA</a>
+          <button class="hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false">☰</button>
+        </div>
+      </nav>
+
+      <div class="mobileMenu" id="mobileMenu" aria-label="Mobile menu">
+        <a href="about.html">About</a>
+        <a href="events.html">Events</a>
+        <a href="team.html">Our Team</a>
+        <a href="goals.html">Goals</a>
+        <a href="join.html">Join</a>
+        <a href="resources.html">Resources</a>
+        <a href="contact.html">Contact</a>
+      </div>
+    </div>
+  </header>
+
+  
+<main class="container">
+  <section class="pageHeader">
+    <h1 class="reveal">About UNSA Sheridan</h1>
+    <p class="reveal">
+      We’re a student-led club at Sheridan College focused on global issues, the United Nations, and creating meaningful action
+      through events, workshops, and campus collaboration.
+    </p>
+  </section>
+
+  <section class="section" style="padding-top:10px;">
+    <div class="split">
+      <div class="card pad reveal">
+        <h2 style="margin:0 0 8px;">What we believe</h2>
+        <div class="list">
+          <div class="li"><div class="dot"></div><div><strong>Curiosity</strong><span>Ask better questions about the world.</span></div></div>
+          <div class="li"><div class="dot"></div><div><strong>Community</strong><span>Meet people who care and want to contribute.</span></div></div>
+          <div class="li"><div class="dot"></div><div><strong>Impact</strong><span>Turn learning into action with projects and volunteering.</span></div></div>
+        </div>
+      </div>
+
+      <div class="card pad reveal">
+        <h2 style="margin:0 0 8px;">What we do</h2>
+        <p class="small">Examples you can customize:</p>
+        <div class="list">
+          <div class="li"><div class="dot"></div><div><strong>Workshops</strong><span>Diplomacy, public speaking, policy writing, Model UN skills.</span></div></div>
+          <div class="li"><div class="dot"></div><div><strong>Events</strong><span>Guest speakers, SDG panels, cultural nights, awareness drives.</span></div></div>
+          <div class="li"><div class="dot"></div><div><strong>Challenges</strong><span>SDG Innovation Challenge — teams build solutions and pitch.</span></div></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="card pad reveal" style="margin-top:14px;">
+      <h2 style="margin:0 0 8px;">Who can join?</h2>
+      <p>
+        Everyone. If you’re interested in global affairs, humanitarian work, sustainable development, or just want to meet people
+        and grow your leadership skills — you belong here.
+      </p>
+      <div style="margin-top:12px;">
+        <a class="btn" href="join.html">Join UNSA</a>
+        <a class="btn secondary" href="goals.html" style="margin-left:10px;">See our goals</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footerGrid">
+        <div class="card pad">
+          <div style="display:flex; align-items:center; gap:12px;">
+            <img src="assets/logo.png" alt="UNSA Sheridan" style="width:44px;height:44px;border-radius:14px;box-shadow:var(--glow);background:rgba(255,255,255,.06);object-fit:cover;" />
+            <div>
+              <strong style="letter-spacing:.4px;">UNSA Sheridan</strong><br/>
+              <span class="muted">A student community focused on global awareness, diplomacy, and impact.</span>
+            </div>
+          </div>
+          <p class="muted" style="margin-top:12px;">
+            Want to collaborate or sponsor an event? Reach out via the contact page.
+          </p>
+          <div class="copy">© <span id="year"></span> UNSA Sheridan • Built with ♥</div>
+        </div>
+
+        <div class="cols">
+          <a href="about.html">Learn about UNSA</a>
+          <a href="events.html">See upcoming events</a>
+          <a href="join.html">Become a member</a>
+          <a href="resources.html">UN + SDG resources</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>

@@ -1,0 +1,175 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="UNSA Sheridan events and workshops" />
+  <title>Events • UNSA Sheridan</title>
+  <link rel="icon" type="image/png" href="assets/favicon.png" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="topbar">
+    <div class="container">
+      <nav class="nav" aria-label="Primary">
+        <a class="brand" href="index.html">
+          <img src="assets/logo.png" alt="UNSA Sheridan logo" />
+          <div class="title">
+            <strong>UNSA SHERIDAN</strong>
+            <span>Sheridan College Club</span>
+          </div>
+        </a>
+
+        <div class="links" role="navigation">
+          <a href="about.html">About</a>
+          <a href="events.html">Events</a>
+          <a href="team.html">Our Team</a>
+          <a href="goals.html">Goals</a>
+          <a href="join.html">Join</a>
+          <a href="resources.html">Resources</a>
+          <a href="contact.html">Contact</a>
+        </div>
+
+        <div class="actions">
+          <a class="btn secondary" href="events.html" title="See what's coming up">Upcoming</a>
+          <a class="btn" href="join.html" title="Become a member">Join UNSA</a>
+          <button class="hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false">☰</button>
+        </div>
+      </nav>
+
+      <div class="mobileMenu" id="mobileMenu" aria-label="Mobile menu">
+        <a href="about.html">About</a>
+        <a href="events.html">Events</a>
+        <a href="team.html">Our Team</a>
+        <a href="goals.html">Goals</a>
+        <a href="join.html">Join</a>
+        <a href="resources.html">Resources</a>
+        <a href="contact.html">Contact</a>
+      </div>
+    </div>
+  </header>
+
+  
+<main class="container">
+  <section class="pageHeader">
+    <h1 class="reveal">Upcoming Events</h1>
+    <p class="reveal">
+      Add or edit events below. The site automatically shows a countdown to the next upcoming event.
+    </p>
+  </section>
+
+  <section class="section" style="padding-top:10px;">
+    <div class="card pad reveal">
+      <div style="display:flex; gap:12px; align-items:center; justify-content:space-between; flex-wrap:wrap;">
+        <div>
+          <span class="pill">Tip: Edit dates in events.html</span>
+          <div class="small" style="margin-top:6px;">Use <b>data-date</b> in YYYY-MM-DD format for countdown.</div>
+        </div>
+        <div style="display:flex; align-items:center; gap:10px;">
+          <label for="eventFilter" class="small">Filter:</label>
+          <select class="select" id="eventFilter" style="min-width:190px;">
+            <option value="all">All</option>
+            <option value="workshop">Workshops</option>
+            <option value="speaker">Speakers</option>
+            <option value="social">Social</option>
+            <option value="challenge">Challenge</option>
+          </select>
+        </div>
+      </div>
+
+      <table class="table" id="eventsTable" aria-label="Events table">
+        <thead>
+          <tr>
+            <th>Date</th>
+            <th>Event</th>
+            <th>Location</th>
+            <th>Notes</th>
+          </tr>
+        </thead>
+        <tbody>
+          <!-- Update these with real dates + info -->
+          <tr data-tag="workshop" data-date="2026-01-18" data-title="Diplomacy & Model UN Workshop">
+            <td><span class="pill">Jan 18, 2026</span></td>
+            <td><strong>Diplomacy & Model UN Workshop</strong><div class="small">Public speaking + negotiation basics</div></td>
+            <td>Room TBD</td>
+            <td class="small">Bring a laptop/notebook.</td>
+          </tr>
+
+          <tr data-tag="speaker" data-date="2026-02-05" data-title="Guest Speaker Night">
+            <td><span class="pill">Feb 5, 2026</span></td>
+            <td><strong>Guest Speaker Night</strong><div class="small">Global careers + impact stories</div></td>
+            <td>Virtual / Hybrid</td>
+            <td class="small">Registration link coming soon.</td>
+          </tr>
+
+          <tr data-tag="challenge" data-date="2026-03-10" data-title="SDG Innovation Challenge Kickoff">
+            <td><span class="pill">Mar 10, 2026</span></td>
+            <td><strong>SDG Innovation Challenge Kickoff</strong><div class="small">Form teams + pick an SDG</div></td>
+            <td>HMC / Davis</td>
+            <td class="small">Prizes + certificates (TBD).</td>
+          </tr>
+
+          <tr data-tag="social" data-date="2026-03-20" data-title="Meet & Greet">
+            <td><span class="pill">Mar 20, 2026</span></td>
+            <td><strong>UNSA Meet & Greet</strong><div class="small">New members + club roadmap</div></td>
+            <td>Student commons</td>
+            <td class="small">Snacks + networking.</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="split">
+      <div class="card pad reveal">
+        <h2 style="margin:0 0 8px;">Want to host an event?</h2>
+        <p>Pitch an idea — workshop, panel, fundraising, cultural night, or SDG project.</p>
+        <div style="margin-top:12px;">
+          <a class="btn" href="contact.html">Contact us</a>
+          <a class="btn secondary" href="join.html" style="margin-left:10px;">Volunteer</a>
+        </div>
+      </div>
+
+      <div class="card pad reveal">
+        <h2 style="margin:0 0 8px;">Stay updated</h2>
+        <p class="small">Add your social links here (Instagram, WhatsApp GC, etc.).</p>
+        <div class="list">
+          <div class="li"><div class="dot"></div><div><strong>Instagram</strong><span>@unsa_sheridan</span></div></div>
+          <div class="li"><div class="dot"></div><div><strong>WhatsApp</strong><span>Link in the Join page</span></div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footerGrid">
+        <div class="card pad">
+          <div style="display:flex; align-items:center; gap:12px;">
+            <img src="assets/logo.png" alt="UNSA Sheridan" style="width:44px;height:44px;border-radius:14px;box-shadow:var(--glow);background:rgba(255,255,255,.06);object-fit:cover;" />
+            <div>
+              <strong style="letter-spacing:.4px;">UNSA Sheridan</strong><br/>
+              <span class="muted">A student community focused on global awareness, diplomacy, and impact.</span>
+            </div>
+          </div>
+          <p class="muted" style="margin-top:12px;">
+            Want to collaborate or sponsor an event? Reach out via the contact page.
+          </p>
+          <div class="copy">© <span id="year"></span> UNSA Sheridan • Built with ♥</div>
+        </div>
+
+        <div class="cols">
+          <a href="about.html">Learn about UNSA</a>
+          <a href="events.html">See upcoming events</a>
+          <a href="join.html">Become a member</a>
+          <a href="resources.html">UN + SDG resources</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>
