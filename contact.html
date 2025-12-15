@@ -31,13 +31,13 @@
         </div>
 
         <div class="actions">
-          <a class="btn secondary" href="events.html" title="See what's coming up">Upcoming</a>
-          <a class="btn" href="join.html" title="Become a member">Join UNSA</a>
+          <a class="btn secondary" href="events.html">Upcoming</a>
+          <a class="btn" href="join.html">Join UNSA</a>
           <button class="hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false">☰</button>
         </div>
       </nav>
 
-      <div class="mobileMenu" id="mobileMenu" aria-label="Mobile menu">
+      <div class="mobileMenu" id="mobileMenu">
         <a href="about.html">About</a>
         <a href="events.html">Events</a>
         <a href="team.html">Our Team</a>
@@ -49,66 +49,99 @@
     </div>
   </header>
 
-  
-<main class="container">
-  <section class="pageHeader">
-    <h1 class="reveal">Contact</h1>
-    <p class="reveal">Questions, partnerships, or speaker suggestions? Reach out.</p>
-  </section>
+  <main class="container">
+    <section class="pageHeader">
+      <h1 class="reveal">Contact Us</h1>
+      <p class="reveal">Questions, partnerships, or speaker suggestions? We’d love to hear from you.</p>
+    </section>
 
-  <section class="section" style="padding-top:10px;">
-    <div class="split">
-      <div class="card pad reveal">
-        <h2 style="margin:0 0 8px;">Contact options</h2>
-        <div class="list">
-          <div class="li"><div class="dot"></div><div><strong>Email</strong><span>unsa.sheridan@example.com (replace this)</span></div></div>
-          <div class="li"><div class="dot"></div><div><strong>Instagram</strong><span>@unsa_sheridan</span></div></div>
-          <div class="li"><div class="dot"></div><div><strong>WhatsApp</strong><span>Invite link on Join page</span></div></div>
-        </div>
-        <div style="margin-top:12px;">
-          <a class="btn" href="join.html">Join the club</a>
-        </div>
-      </div>
+    <section class="section" style="padding-top:10px;">
+      <div class="split">
 
-      <div class="card pad reveal">
-        <h2 style="margin:0 0 8px;">Speaker / partnership pitch</h2>
-        <p class="small">Fast way: copy and email this template.</p>
-        <div class="card pad" style="background: rgba(0,0,0,.12); border-color: rgba(255,255,255,.10);">
-          <div class="small" style="white-space:pre-wrap;">Subject: UNSA Sheridan — Collaboration
+        <!-- CONTACT INFO -->
+        <div class="card pad reveal">
+          <h2 style="margin:0 0 8px;">Get in touch</h2>
+
+          <div class="list">
+
+            <a class="li" href="mailto:unsa.sheridan@gmail.com">
+              <div class="dot"></div>
+              <div>
+                <strong>Email</strong>
+                <span>unsa.sheridan@gmail.com</span>
+              </div>
+            </a>
+
+            <a class="li"
+               href="https://www.instagram.com/unsa_sheridan/"
+               target="_blank"
+               rel="noreferrer">
+              <div class="dot"></div>
+              <div>
+                <strong>Instagram</strong>
+                <span>@unsa_sheridan</span>
+              </div>
+            </a>
+
+            <a class="li"
+               href="https://chat.whatsapp.com/CJt0bNEaWBi3wACerpa5Gc"
+               target="_blank"
+               rel="noreferrer">
+              <div class="dot"></div>
+              <div>
+                <strong>WhatsApp Group Chat</strong>
+                <span>Join our WhatsApp community</span>
+              </div>
+            </a>
+
+          </div>
+
+          <div style="margin-top:12px;">
+            <a class="btn" href="join.html">Join the club</a>
+          </div>
+        </div>
+
+        <!-- PARTNERSHIP TEMPLATE -->
+        <div class="card pad reveal">
+          <h2 style="margin:0 0 8px;">Speaker / partnership pitch</h2>
+          <p class="small">Quick copy-and-send email template:</p>
+
+          <div class="card pad" style="background: rgba(0,0,0,.12); border-color: rgba(255,255,255,.10);">
+            <div class="small" style="white-space:pre-wrap;">
+Subject: UNSA Sheridan — Collaboration
 
 Hi [Name],
 
-I’m reaching out from UNSA Sheridan (Sheridan College). We’re hosting events around global issues, the UN SDGs, and student leadership.
-We’d love to explore a collaboration or invite you to speak at an upcoming session.
+I’m reaching out from UNSA Sheridan (Sheridan College). We’re a student-led organization focused on global issues, the UN Sustainable Development Goals, and leadership development.
 
-Ideal topic(s): [topic]
-Possible dates: [dates]
+We’d love to explore a collaboration or invite you to speak at an upcoming event.
+
+Proposed topic(s): [topic]  
+Possible dates: [dates]  
 Format: [virtual / on-campus / hybrid]
 
-Thanks,
-[Your name]
-UNSA Sheridan</div>
+Best regards,  
+[Your name]  
+UNSA Sheridan
+            </div>
+          </div>
         </div>
-      </div>
-    </div>
-  </section>
-</main>
 
+      </div>
+    </section>
+  </main>
 
   <footer class="footer">
     <div class="container">
       <div class="footerGrid">
         <div class="card pad">
           <div style="display:flex; align-items:center; gap:12px;">
-            <img src="assets/logo.png" alt="UNSA Sheridan" style="width:44px;height:44px;border-radius:14px;box-shadow:var(--glow);background:rgba(255,255,255,.06);object-fit:cover;" />
+            <img src="assets/logo.png" alt="UNSA Sheridan" style="width:44px;height:44px;border-radius:14px;box-shadow:var(--glow);" />
             <div>
-              <strong style="letter-spacing:.4px;">UNSA Sheridan</strong><br/>
+              <strong>UNSA Sheridan</strong><br/>
               <span class="muted">A student community focused on global awareness, diplomacy, and impact.</span>
             </div>
           </div>
-          <p class="muted" style="margin-top:12px;">
-            Want to collaborate or sponsor an event? Reach out via the contact page.
-          </p>
           <div class="copy">© <span id="year"></span> UNSA Sheridan • Built with ♥</div>
         </div>
 
@@ -123,6 +156,8 @@ UNSA Sheridan</div>
   </footer>
 
   <script src="main.js"></script>
-  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>
