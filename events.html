@@ -49,120 +49,130 @@
     </div>
   </header>
 
-  
-<main class="container">
-  <section class="pageHeader">
-    <h1 class="reveal">Upcoming Events</h1>
-    <p class="reveal">
-      Add or edit events below. The site automatically shows a countdown to the next upcoming event.
-    </p>
-  </section>
+  <main class="container">
+    <section class="pageHeader">
+      <h1 class="reveal">Upcoming Events</h1>
+      <p class="reveal">
+        Add or edit events below. The site automatically shows a countdown to the next upcoming event.
+      </p>
+    </section>
 
-  <section class="section" style="padding-top:10px;">
-    <div class="card pad reveal">
-      <div style="display:flex; gap:12px; align-items:center; justify-content:space-between; flex-wrap:wrap;">
-        <div>
-          <span class="pill">Tip: Edit dates in events.html</span>
-          <div class="small" style="margin-top:6px;">Use <b>data-date</b> in YYYY-MM-DD format for countdown.</div>
-        </div>
-        <div style="display:flex; align-items:center; gap:10px;">
-          <label for="eventFilter" class="small">Filter:</label>
-          <select class="select" id="eventFilter" style="min-width:190px;">
-            <option value="all">All</option>
-            <option value="workshop">Workshops</option>
-            <option value="speaker">Speakers</option>
-            <option value="social">Social</option>
-            <option value="challenge">Challenge</option>
-          </select>
-        </div>
-      </div>
-
-      <table class="table" id="eventsTable" aria-label="Events table">
-        <thead>
-          <tr>
-            <th>Date</th>
-            <th>Event</th>
-            <th>Location</th>
-            <th>Notes</th>
-          </tr>
-        </thead>
-        <tbody>
-          <!-- Update these with real dates + info -->
-          <tr data-tag="workshop" data-date="2026-01-18" data-title="Diplomacy & Model UN Workshop">
-            <td><span class="pill">Jan 18, 2026</span></td>
-            <td><strong>Diplomacy & Model UN Workshop</strong><div class="small">Public speaking + negotiation basics</div></td>
-            <td>Room TBD</td>
-            <td class="small">Bring a laptop/notebook.</td>
-          </tr>
-
-          <tr data-tag="speaker" data-date="2026-02-05" data-title="Guest Speaker Night">
-            <td><span class="pill">Feb 5, 2026</span></td>
-            <td><strong>Guest Speaker Night</strong><div class="small">Global careers + impact stories</div></td>
-            <td>Virtual / Hybrid</td>
-            <td class="small">Registration link coming soon.</td>
-          </tr>
-
-          <tr data-tag="challenge" data-date="2026-03-10" data-title="SDG Innovation Challenge Kickoff">
-            <td><span class="pill">Mar 10, 2026</span></td>
-            <td><strong>SDG Innovation Challenge Kickoff</strong><div class="small">Form teams + pick an SDG</div></td>
-            <td>HMC / Davis</td>
-            <td class="small">Prizes + certificates (TBD).</td>
-          </tr>
-
-          <tr data-tag="social" data-date="2026-03-20" data-title="Meet & Greet">
-            <td><span class="pill">Mar 20, 2026</span></td>
-            <td><strong>UNSA Meet & Greet</strong><div class="small">New members + club roadmap</div></td>
-            <td>Student commons</td>
-            <td class="small">Snacks + networking.</td>
-          </tr>
-        </tbody>
-      </table>
-    </div>
-
-    <div class="split">
+    <section class="section" style="padding-top:10px;">
       <div class="card pad reveal">
-        <h2 style="margin:0 0 8px;">Want to host an event?</h2>
-        <p>Pitch an idea — workshop, panel, fundraising, cultural night, or SDG project.</p>
-        <div style="margin-top:12px;">
-          <a class="btn" href="contact.html">Contact us</a>
-          <a class="btn secondary" href="join.html" style="margin-left:10px;">Volunteer</a>
+        <div style="display:flex; gap:12px; align-items:center; justify-content:space-between; flex-wrap:wrap;">
+          <div>
+            <span class="pill">Tip: Edit dates in events.html</span>
+            <div class="small" style="margin-top:6px;">Use <b>data-date</b> in YYYY-MM-DD format for countdown.</div>
+          </div>
+          <div style="display:flex; align-items:center; gap:10px;">
+            <label for="eventFilter" class="small">Filter:</label>
+            <select class="select" id="eventFilter" style="min-width:190px;">
+              <option value="all">All</option>
+              <option value="workshop">Workshops</option>
+              <option value="speaker">Speakers</option>
+              <option value="social">Social</option>
+              <option value="challenge">Challenge</option>
+            </select>
+          </div>
         </div>
+
+        <table class="table" id="eventsTable" aria-label="Events table">
+          <thead>
+            <tr>
+              <th>Date</th>
+              <th>Event</th>
+              <th>Location</th>
+              <th>Notes</th>
+            </tr>
+          </thead>
+          <tbody>
+            <!-- Update these with real dates + info -->
+            <tr data-tag="workshop" data-date="2026-01-18" data-title="Diplomacy & Model UN Workshop">
+              <td><span class="pill">Jan 18, 2026</span></td>
+              <td>
+                <strong>Diplomacy & Model UN Workshop</strong>
+                <div class="small">Public speaking + negotiation basics</div>
+              </td>
+              <td>Room TBD</td>
+              <td class="small">Bring a laptop/notebook.</td>
+            </tr>
+
+            <tr data-tag="speaker" data-date="2026-02-05" data-title="Guest Speaker Night">
+              <td><span class="pill">Feb 5, 2026</span></td>
+              <td>
+                <strong>Guest Speaker Night</strong>
+                <div class="small">Global careers + impact stories</div>
+              </td>
+              <td>Virtual / Hybrid</td>
+              <td class="small">Registration link coming soon.</td>
+            </tr>
+
+            <tr data-tag="challenge" data-date="2026-03-10" data-title="SDG Innovation Challenge Kickoff">
+              <td><span class="pill">Mar 10, 2026</span></td>
+              <td>
+                <strong>SDG Innovation Challenge Kickoff</strong>
+                <div class="small">Form teams + pick an SDG</div>
+              </td>
+              <td>HMC / Davis</td>
+              <td class="small">Prizes + certificates (TBD).</td>
+            </tr>
+
+            <tr data-tag="social" data-date="2026-03-20" data-title="Meet & Greet">
+              <td><span class="pill">Mar 20, 2026</span></td>
+              <td>
+                <strong>UNSA Meet & Greet</strong>
+                <div class="small">New members + club roadmap</div>
+              </td>
+              <td>Student commons</td>
+              <td class="small">Snacks + networking.</td>
+            </tr>
+          </tbody>
+        </table>
       </div>
 
-     <div class="card pad reveal">
-  <h2 style="margin:0 0 8px;">Stay updated</h2>
-  <p class="small">Follow us and join the group to stay in the loop.</p>
+      <div class="split">
+        <div class="card pad reveal">
+          <h2 style="margin:0 0 8px;">Want to host an event?</h2>
+          <p>Pitch an idea — workshop, panel, fundraising, cultural night, or SDG project.</p>
+          <div style="margin-top:12px;">
+            <a class="btn" href="contact.html">Contact us</a>
+            <a class="btn secondary" href="join.html" style="margin-left:10px;">Volunteer</a>
+          </div>
+        </div>
 
-  <div class="list">
-    <div class="li">
-      <div class="dot"></div>
-      <div>
-        <strong>Instagram</strong>
-        <span>
-          <a href="https://www.instagram.com/unsa_sheridan/" target="_blank" rel="noreferrer">
-            @unsa_sheridan
-          </a>
-        </span>
-      </div>
-    </div>
+        <div class="card pad reveal">
+          <h2 style="margin:0 0 8px;">Stay updated</h2>
+          <p class="small">Follow us and join the group to stay in the loop.</p>
 
-    <div class="li">
-      <div class="dot"></div>
-      <div>
-        <strong>WhatsApp Group Chat</strong>
-        <span>
-          <a href="https://chat.whatsapp.com/CJt0bNEaWBi3wACerpa5Gc"
-             target="_blank"
-             rel="noreferrer">
-            Join the WhatsApp group
-          </a>
-        </span>
-      </div>
-    </div>
-  </div>
-</div>
+          <div class="list">
+            <div class="li">
+              <div class="dot"></div>
+              <div>
+                <strong>Instagram</strong>
+                <span>
+                  <a href="https://www.instagram.com/unsa_sheridan/" target="_blank" rel="noreferrer">
+                    @unsa_sheridan
+                  </a>
+                </span>
+              </div>
+            </div>
 
-
+            <div class="li">
+              <div class="dot"></div>
+              <div>
+                <strong>WhatsApp Group Chat</strong>
+                <span>
+                  <a href="https://chat.whatsapp.com/CJt0bNEaWBi3wACerpa5Gc" target="_blank" rel="noreferrer">
+                    Join the WhatsApp group
+                  </a>
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div> <!-- end split -->
+    </section>
+  </main>
 
   <footer class="footer">
     <div class="container">
